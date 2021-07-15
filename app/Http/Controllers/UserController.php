@@ -70,8 +70,8 @@ class UserController extends Controller
         }
     }
 
-    public function User(){
+    // public function User(){
 
-         return User::all();
-    }
+    //      return User::all();
+    // }
 }
