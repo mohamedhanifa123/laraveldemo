@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use App\Models\User;
 
 class UserController extends Controller
 {
@@ -25,8 +26,8 @@ class UserController extends Controller
                 'data'   =>[],
                 'message'=>'email id or password is invalid'
             ]);
-
         }
+       
        
     }
 
@@ -67,5 +68,10 @@ class UserController extends Controller
                 'message'=>'No Users Found'
             ]);
         }
+    }
+
+    public function User(){
+
+         return User::all();
     }
 }

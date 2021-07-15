@@ -28,3 +28,4 @@ Route::post('product-update','ProductController@update')->middleware('auth:api')
 Route::get('product/{id}','ProductController@show')->middleware('auth:api');
 Route::get('product-list','ProductController@index')->middleware('auth:api');
 Route::get('product-delete','ProductController@destroy')->middleware('auth:api');
+Route::get('list',[UserController::class,'User']);
